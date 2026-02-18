@@ -1,0 +1,51 @@
+/* ===== CSS RESET ===== */
+
+/* Remove default margins & paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Improve text rendering */
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Make images behave */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* Remove built‑in form styles */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove list styles */
+ul,
+ol {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Anchor defaults */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Set a sensible body baseline */
+body {
+    line-height: 1.5;
+    min-height: 100vh;
+}
