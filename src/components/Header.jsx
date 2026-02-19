@@ -50,7 +50,7 @@ function Header() {
 
                             </div>
                             <div className="col-md-6">
-                                <img src="/oksana-demenko-gkzP5awCZAQ-unsplash.jpg"
+                                <img src="./oksana-demenko-gkzP5awCZAQ-unsplash.jpg"
                                      className="img-fluid rounded w-auto"
                                      alt="Business IT Solutions"/>
                             </div>

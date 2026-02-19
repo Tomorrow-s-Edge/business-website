@@ -19,7 +19,7 @@ function App() {
                   </div>
                   <div className="col-md-4">
                       <div className="card shadow-sm p-3">
-                          <img src="/react-adaptive-cards.png" className="img-fluid mb-3"
+                          <img src="./react-adaptive-cards.png" className="img-fluid mb-3"
                                alt="Feature 1"/>
                           <h5>React Adaptive Cards</h5>
                           <p>Modern, dynamic UI components inside Business Central.</p>
@@ -28,7 +28,7 @@ function App() {
 
                   <div className="col-md-4">
                       <div className="card shadow-sm p-3">
-                          <img src="/signature-canvas.png" className="img-fluid mb-3"
+                          <img src="./signature-canvas.png" className="img-fluid mb-3"
                                alt="Feature 2"/>
                           <h5>Signature Canvas</h5>
                           <p>Capture signatures directly in your workflows.</p>
@@ -37,7 +37,7 @@ function App() {
 
                   <div className="col-md-4">
                       <div className="card shadow-sm p-3">
-                          <img src="/google-maps.png" className="img-fluid mb-3"
+                          <img src="./google-maps.png" className="img-fluid mb-3"
                                alt="Feature 3"/>
                           <h5>Google Maps Add‑ins</h5>
                           <p>Location-aware tools integrated into Business Central.</p>
