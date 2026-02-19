@@ -5,7 +5,7 @@ function Header() {
         <div>
 
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-3">
-                <a className="navbar-brand" href="#">MagamIT</a>
+                <a className="navbar-brand" href="#">Magam<span className="text-blue">it</span></a>
 
                 <button
                     className="navbar-toggler"
@@ -42,7 +42,8 @@ function Header() {
                     <div className="row align-items-center">
                         <div className="row mb-4">
                             <div className="col-md-6 align-content-center">
-                                <h2>Welcome to MagamIT</h2>
+                                <h2>Welcome to Magam<span className="text-blue">it</span></h2>
+
                                 <p className="lead">We specialize in creating custom solutions for Microsoft Dynamics
                                     365
                                     Business Central. Our tools and add‑ins enhance your ERP experience, making it more

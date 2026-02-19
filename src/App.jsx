@@ -1,5 +1,6 @@
 import './App.css'
 import Header from "./components/Header.jsx";
+import React from "react";
 
 function App() {
 
@@ -55,7 +56,7 @@ function App() {
 
                       <div className="card shadow-sm container text-center p-4">
                           <h3 className="mb-3">Our Mission</h3>
-                          <p className="lead">At MagamIT, our mission is to empower businesses by delivering
+                          <p className="lead">At Magam<span className="text-blue">it</span>, our mission is to empower businesses by delivering
                               innovative tools and
                               add‑ins that seamlessly integrate with Microsoft Dynamics 365 Business Central. We
                               are
@@ -113,7 +114,7 @@ function App() {
               <div className="text-center"><h4>Contact Us</h4> <p>Email • LinkedIn • GitHub</p></div>
 
               <div className="bg-dark text-white text-center py-3 mt-auto">
-                  <small>© {new Date().getFullYear()} MagamIT — All rights reserved.</small>
+                  <small>© {new Date().getFullYear()} Magam<span className="text-blue">it</span> — All rights reserved.</small>
               </div>
           </footer>
       </div>
