@@ -19,7 +19,7 @@ function App() {
                   </div>
                   <div className="col-md-4">
                       <div className="card shadow-sm p-3">
-                          <img src="src/assets/react-adaptive-cards.png" className="img-fluid mb-3"
+                          <img src="/react-adaptive-cards.png" className="img-fluid mb-3"
                                alt="Feature 1"/>
                           <h5>React Adaptive Cards</h5>
                           <p>Modern, dynamic UI components inside Business Central.</p>
@@ -28,7 +28,7 @@ function App() {
 
                   <div className="col-md-4">
                       <div className="card shadow-sm p-3">
-                          <img src="src/assets/signature-canvas.png" className="img-fluid mb-3"
+                          <img src="/signature-canvas.png" className="img-fluid mb-3"
                                alt="Feature 2"/>
                           <h5>Signature Canvas</h5>
                           <p>Capture signatures directly in your workflows.</p>
@@ -37,7 +37,7 @@ function App() {
 
                   <div className="col-md-4">
                       <div className="card shadow-sm p-3">
-                          <img src="src/assets/google-maps.png" className="img-fluid mb-3"
+                          <img src="/google-maps.png" className="img-fluid mb-3"
                                alt="Feature 3"/>
                           <h5>Google Maps Add‑ins</h5>
                           <p>Location-aware tools integrated into Business Central.</p>
@@ -55,14 +55,13 @@ function App() {
 
                       <div className="card shadow-sm container text-center p-4">
                           <h3 className="mb-3">Our Mission</h3>
-                          <p className="lead">At Business IT, our mission is to empower businesses by delivering
+                          <p className="lead">At MagamIT, our mission is to empower businesses by delivering
                               innovative tools and
                               add‑ins that seamlessly integrate with Microsoft Dynamics 365 Business Central. We
                               are
                               committed to enhancing the functionality and user experience of Business Central,
                               helping
                               our clients achieve greater efficiency and success in their operations.</p>
-
 
                       </div>
                   </div>
@@ -111,10 +110,10 @@ function App() {
 
           {/*footer*/}
           <footer className="container-fluid full-section bg-dark text-white py-5">
-              <div className="container text-center"><h4>Contact Us</h4> <p>Email • LinkedIn • GitHub</p></div>
+              <div className="text-center"><h4>Contact Us</h4> <p>Email • LinkedIn • GitHub</p></div>
 
               <div className="bg-dark text-white text-center py-3 mt-auto">
-                  <small>© {new Date().getFullYear()} NagagamIT — All rights reserved.</small>
+                  <small>© {new Date().getFullYear()} MagamIT — All rights reserved.</small>
               </div>
           </footer>
       </div>

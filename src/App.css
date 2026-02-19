@@ -26,12 +26,12 @@ html, body {
 
 .full-section {
   scroll-snap-align: start;
-  height: 100vh; /* full screen height */
+  min-height: 100vh; /* full screen height */
 }
 
 .snap-section {
   scroll-snap-align: start;
-  height: 100vh; /* full screen height */
+  min-height: 100vh; /* full screen height */
   display: flex;
   align-items: center; /* vertically center content */
   padding: 40px 0;
