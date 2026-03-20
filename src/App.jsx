@@ -10,7 +10,7 @@ function App() {
   return (
       <div className="app-container d-flex flex-column min-vh-100">
           {/*hero section*/}
-          <main class="container-fluid full-section">
+          <main className="container-fluid full-section">
               <Header/>
           </main>
 

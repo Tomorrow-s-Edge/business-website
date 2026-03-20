@@ -1,42 +1,79 @@
-import React from "react";
+import React, {useState} from "react";
+import AdaptiveCardDetailPage from "../pages/AdaptiveCardDetailPage.jsx";
+import SignatureCanvasCardDetailPage from "../pages/SignatureCanvasCardDetailPage.jsx";
+import GoogleMapsDetailPage from "../pages/GoogleMapsDetailPage.jsx";
 
 function Homepage() {
+
+    const tools = [
+        { type: "adaptive", title: "React Adaptive Cards", description: "Modern, dynamic UI components inside Business Central.", img: "./react-adaptive-cards.png" },
+        { type: "signature", title: "Signature Canvas", description: "Capture signatures directly in your workflows.", img: "./signature-canvas.png"  },
+        { type: "maps", title: "Google Maps Add‑ins", description: "Location-aware tools integrated into Business Central.", img: "./google-maps.png"  }
+    ];
+
+    const [selectedTool, setSelectedTool] = useState(null);
+
+
+    const renderDetailPage = () => {
+        if (selectedTool === null) return null;
+
+        const item = tools[selectedTool];
+
+        switch (item.type) {
+            case "adaptive":
+                return (
+                    <AdaptiveCardDetailPage
+                        item={item}
+                        onClose={() => setSelectedTool(null)}
+                    />
+                );
+            case "signature":
+                return (
+                    <SignatureCanvasCardDetailPage
+                        item={item}
+                        onClose={() => setSelectedTool(null)}
+                    />
+                );
+            case "maps":
+                return (
+                    <GoogleMapsDetailPage
+                        item={item}
+                        onClose={() => setSelectedTool(null)}
+                    />
+                );
+        }
+    }
+
     return (
         <div>
 
             {/*tools section*/}
-            <section className="container-fluid snap-section py-5">
+            <section className="container-fluid snap-section py-5" id="features">
                 <div className="row py-5">
                     <div className="container-fluid tools-banner">
                         <div className="container"><h2>Our Tools</h2> <p>React Adaptive Cards • Signature
                             Canvas • Google Maps Add-ins</p></div>
                     </div>
-                    <div className="col-md-4">
-                        <div className="card shadow-sm p-3">
-                            <img src="./react-adaptive-cards.png" className="img-fluid mb-3"
-                                 alt="Feature 1"/>
-                            <h5>React Adaptive Cards</h5>
-                            <p>Modern, dynamic UI components inside Business Central.</p>
-                        </div>
-                    </div>
 
-                    <div className="col-md-4">
-                        <div className="card shadow-sm p-3">
-                            <img src="./signature-canvas.png" className="img-fluid mb-3"
-                                 alt="Feature 2"/>
-                            <h5>Signature Canvas</h5>
-                            <p>Capture signatures directly in your workflows.</p>
+                    {tools.map((tool, index) => (
+                        <div
+                            key={index}
+                            className="col-md-4"
+                            onClick={() => setSelectedTool(index)}
+                        >
+                            <div className="card shadow-sm p-3">
+                                <img src={tool.img} className="img-fluid mb-3"
+                                     alt="Feature 1"/>
+                                <h5>{tool.title}</h5>
+                                <p>{tool.description}</p>
+                            </div>
                         </div>
-                    </div>
+                    ))}
 
-                    <div className="col-md-4">
-                        <div className="card shadow-sm p-3">
-                            <img src="./google-maps.png" className="img-fluid mb-3"
-                                 alt="Feature 3"/>
-                            <h5>Google Maps Add‑ins</h5>
-                            <p>Location-aware tools integrated into Business Central.</p>
-                        </div>
-                    </div>
+
+
+                    {renderDetailPage()}
+
                 </div>
             </section>
 
@@ -100,6 +137,7 @@ function Homepage() {
                 </div>
 
             </section>
+
 
         </div>
     );
