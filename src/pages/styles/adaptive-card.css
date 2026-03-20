@@ -1,0 +1,45 @@
+.detail-page-container {
+    height: 100vh;        /* full screen */
+    overflow-y: auto;     /* scrolls vertically */
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: sans-serif;
+}
+
+.back-link {
+    text-decoration: none;
+    color: #0078d4;
+    font-size: 0.9rem;
+}
+
+.hero h1 {
+    margin-bottom: 0.5rem;
+}
+
+.preview-section .card-preview {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fafafa;
+}
+
+.props-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.props-table th,
+.props-table td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+}
+
+.code-block {
+    background: #1e1e1e;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 6px;
+    overflow-x: auto;
+}
