@@ -17,7 +17,9 @@ function AdaptiveCardDetailPage({item, onClose}) {
 
                     {/* Hero Section */}
                     <header className="hero">
-                        <h1>Customer Summary Card</h1>
+                        <h1>React Adaptive Cards</h1>
+                        <img src="./react-adaptive-cards.png" alt="Signature Canvas Demo" className="img-fluid mb-3"/>
+
                         <p>
                             This Adaptive Card displays customer information in a compact,
                             responsive layout. It supports dynamic data, theming, and action
